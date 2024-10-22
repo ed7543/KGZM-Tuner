@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Test Online Tuner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="backnav">
+        <div class="navigation">
+            <span>CompSci</span>
+            <a href="guitar.html">Guitar</a>
+            <a href="bass.html">Bass</a>
+            <a href="ukulele.html">Ukulele</a>
+            <a href="index.html">Back</a>
+        </div>
+   </div>
+
+   <div class="tuner">
+        <h2>ACOUSTIC GUITAR ONLINE TUNER</h2>
+        <h3>Tap the note, tune the string to the tone.</h3>
+
+        <div class="instrument">
+            <div class="string" id="E2">
+                <h4>Low E (E2)</h4>
+                <button onclick="startTuning('E2')">Tune E2</button>
+                <span class="feedback"></span>
+            </div>
+            <div class="string" id="A2">
+                <h4>A (A2)</h4>
+                <button onclick="startTuning('A2')">Tune</button>
+                <span class="feedback"></span>
+            </div>
+            <div class="string" id="D3">
+                <h4>D (D3)</h4>
+                <button onclick="startTuning('D3')">Tune</button>
+                <span class="feedback"></span>
+            </div>
+            <div class="string" id="G3">
+                <h4>G (G3)</h4>
+                <button onclick="startTuning('G3')">Tune</button>
+                <span class="feedback"></span>
+            </div>
+            <div class="string" id="B3">
+                <h4>B (B3)</h4>
+                <button onclick="startTuning('B3')">Tune</button>
+                <span class="feedback"></span>
+            </div>
+            <div class="string" id="E4">
+                <h4>High E (E4)</h4>
+                <button onclick="startTuning('E4')">Tune</button>
+                <span class="feedback"></span>
+            </div>
+        </div>
+   </div>
+
+   <script src="tunerG.js"></script>
+
+</body>
+</html>

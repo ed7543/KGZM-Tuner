@@ -3,17 +3,52 @@
 <head>
     <meta charset="utf-8">
     <title>Test Online Tuner</title>
-    <style>
-        body {
-            margin: auto;
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Online tuner</h1>
-    <h2>Tune your guitar</h2>
-    <h3>Pick your instrument and start tuning right away. </h3>
+
+   <div class="backnav">
+        <div class="navigation">
+            <span>CompSci</span>
+            <a href="guitar.html">Guitar</a>
+            <a href="bass.html">Bass</a>
+            <a href="ukulele.html">Ukulele</a>
+        </div>
+   </div>
+
+   <div class="tuner">
+        <h2>Tune your acoustic, electric, bass guitar and ukulele</h2>
+        <h3>Pick your instrument and start tuning right away. </h3>
+
+        <div class="instrument">
+            <div class="guitar">
+                <img src="guitar.jpg" alt="Guitar" class="instrument-photo">
+                <a href="guitar.html">Guitar</a>
+            </div>
+            <div class="bass">
+                <img src="bass.jpg" alt="Bass" class="instrument-photo">
+                <a href="bass.html">Bass</a>
+            </div>
+            <div class="ukulele">
+                <img src="ukulele.jpg" alt="Ukulele" class="instrument-photo">
+                <a href="ukulele.html">Ukulele</a>
+            </div>
+           
+        </div>
+   </div>
+
+   <div class="how">
+        <h2>Are you new to tuning?</h2>
+        <h3>Here are some beginner steps.</h3>
+
+        <div class="exp">
+            <span>Standard Tuning, EADGBE, is a good place to start. First, tune the low E (thickest string). Then, work your way to the high E (thinnest string).</span>
+            <span>To tune, use a pick (or your thumb) to play the string. Not too hard, not too soft: The best tone comes from a firm pluck.</span>
+            <span>Too sharp? Turn the peg toward you to go flat. Too flat? Turn the peg away from you to get sharp.</span>
+            <img src="tuning.jpg" alt="Tuning">
+        </div>
+   </div>
 </body>
 </html>
