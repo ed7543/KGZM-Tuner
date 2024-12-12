@@ -27,7 +27,7 @@ function startTuning(string) {
     if (frequency) {
         const difference = frequency - targetFrequency;
 
-        if (Math.abs(difference) < 2) { // Tolerance of 2 Hz
+        if (Math.abs(difference) < 2) { 
             feedbackElement.textContent = "In Tune!";
             feedbackElement.style.color = "green";
         } else if (difference > 0) {

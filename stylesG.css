@@ -1,5 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .backnav {
@@ -36,11 +37,10 @@ body {
 
 .tuner {
     margin: auto;
-    text-align: center;
-    padding: 20px;
-    height: 530px;
-    width: 1200px;
-    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
 }
 
 h2 {
@@ -59,3 +59,31 @@ button {
     border-radius: 3px;
     background-color: rgb(22, 127, 153);
 }
+
+.fenderG {
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.prvi {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    
+}
+
+.prvi button {
+    margin-top: 70px;
+}
+
+.vtori {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px; 
+}
+
+.vtori button {
+    margin-top: 70px;
+}
+
+

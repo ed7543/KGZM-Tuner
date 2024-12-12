@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Test Online Tuner</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesG.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,9 +19,26 @@
         </div>
    </div>
 
+   <h2>ACOUSTIC GUITAR ONLINE TUNER</h2>
+    <h3>Tap the note, to hear it.</h3>
+
    <div class="tuner">
-        <h2>ACOUSTIC GUITAR ONLINE TUNER</h2>
-        <h3>Tap the note, tune the string to the tone.</h3>
+
+        <div class="prvi">
+            <button class="tune-button" data-note="E_string">E</button>
+            <button class="tune-button" data-note="A_string">A</button>
+            <button class="tune-button" data-note="D_string">D</button>
+        </div>
+
+        <div class="fenderG">
+            <img src="gTuningImg.png">
+        </div>
+
+        <div class="vtori">
+            <button class="tune-button" data-note="G_string">G</button>
+            <button class="tune-button" data-note="B_string">B</button>
+            <button class="tune-button" data-note="E_high_string">E</button>
+        </div>
 
         <div class="instrument">
             <div class="string" id="E2">
@@ -40,7 +57,7 @@
                 <span class="feedback"></span>
             </div>
             <div class="string" id="G3">
-                <h4>G (G3)</h4>
+               <h4>G (G3)</h4>
                 <button onclick="startTuning('G3')">Tune</button>
                 <span class="feedback"></span>
             </div>
@@ -54,7 +71,8 @@
                 <button onclick="startTuning('E4')">Tune</button>
                 <span class="feedback"></span>
             </div>
-        </div>
+    </div>
+
    </div>
 
    <script src="tunerG.js"></script>
