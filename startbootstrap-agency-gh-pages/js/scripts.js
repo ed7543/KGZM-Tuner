@@ -51,4 +51,58 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+   // Get the canvas element and its context
+const canvas = document.getElementById("tunerCanvas");
+const ctx = canvas.getContext("2d");
+
+// Variables for the tuner animation
+let needleAngle = 0; // Angle of the needle
+let targetAngle = 0; // Target angle for the needle to move toward
+const centerX = canvas.width / 2; // Center of the canvas
+const centerY = canvas.height / 2; // Center of the canvas
+const needleLength = 120; // Length of the needle
+
+// Function to draw the tuner
+function drawTuner() {
+  // Clear the canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw the tuner background (a semi-circle)
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, 150, Math.PI, 0, false); // Semi-circle
+  ctx.strokeStyle = "#000";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Draw the needle
+  ctx.save();
+  ctx.translate(centerX, centerY); // Move the origin to the center
+  ctx.rotate(needleAngle); // Rotate the needle
+  ctx.beginPath();
+  ctx.moveTo(0, 0);
+  ctx.lineTo(needleLength, 0);
+  ctx.strokeStyle = "red";
+  ctx.lineWidth = 3;
+  ctx.stroke();
+  ctx.restore();
+
+  // Animate the needle toward the target angle
+  needleAngle += (targetAngle - needleAngle) * 0.1;
+
+  // Request the next frame
+  requestAnimationFrame(drawTuner);
+}
+
+// Function to simulate a frequency change (for demonstration)
+function simulateFrequencyChange() {
+  // Randomly change the target angle for the needle
+  targetAngle = (Math.random() - 0.5) * Math.PI; // Random angle between -90° and 90°
+}
+
+// Start the tuner animation
+drawTuner();
+
+// Simulate frequency changes every 2 seconds
+setInterval(simulateFrequencyChange, 2000);
+
 });
